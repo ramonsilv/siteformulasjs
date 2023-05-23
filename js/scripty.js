@@ -1,12 +1,23 @@
 function calculocirculo1(){
-    let raio = parseFloat(document.getElementById("Raio: ").value)
-    let area = (pi * raio *(raio,2)
-    alert("Área: " + area)
+    let raio = document.getElementById("radius").value;
+    let area = Math.PI * raio * raio;
+    document.getElementById("resultado").innerHTML = "A área do círculo é: " + area.toFixed(2);
 }
 
-function calculocirculo2(){
-    const PI = 3.14
-    let raio = prompt("Raio: ")
-    let area = 3.14 * raio * raio
-    alert("Área: " + area)
+function hipotenusa(){
+    let co = parseInt (document.getElementById("hipotenusa1").value)
+    let ca = parseInt(document.getElementById("hipotenusa2").value)
+    h = Math.sqrt(
+        Math.pow(co,2) + 
+        Math.pow(ca,2).toFixed(2)
+    )
+    document.getElementById("hipotenusaresultado").innerHTML = h .toFixed(2)
+}
+
+function realdolar(){
+    let real = parseInt(document.getElementById("real").value)
+    let cotacao = parseInt(document.getElementById("cotacao").value)
+    let result = real / cotacao
+    let dolar = result
+    document.getElementById("valorcotacao").innerHTML = 
 }
