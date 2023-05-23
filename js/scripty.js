@@ -21,3 +21,10 @@ function realdolar(){
     let dolar = result
     document.getElementById("valorcotacao").innerHTML = 
 }
+
+function fahrenheit(){
+    let Celsius = prompt
+    let Fahrenheit = Celsius* 9/5 + 32
+    let resultFahrenheit = Fahrenheit
+    alert(resultFahrenheit)
+}
