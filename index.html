@@ -10,9 +10,11 @@
     <title>Formula em js</title>
   </head>
   <body>
-    <h1>Formulas matematicas</h1>
     <div class="container">
       <div class="row">
+    
+        <h1 class="col-xs-12 col-sm-12">Formulas matematicas</h1>
+        <!-- calcular a area do Circulo -->
         <div class="col-xs-12 col-sm-6">
           <h2>Área do Circulo</h2>
           <br />
@@ -32,18 +34,63 @@
         </div>
         <!-- calculadora moeda real/dolar -->
         <div class="col-xs-12 col-sm-6">
-            <h2>Conversor Real<h2><br>
-            <input type="number" id="real" placeholder="valor Real">
-            <input type="number" id="cotacao" placeholder="Informe a cotação">
-            <button type="button" class="btn btn-primary" onclick="realdolar()">valor Dolar<button>
-            <div id="valor cotacao"></div>
+            <h2>Conversor Real<h2>
+            <input class="col-xs-12 col-sm-6" type="number" id="Real" placeholder="valor real">
+            <button type="button" class="btn btn-primary" onclick="realDolar()">valor Dolar</button>
+            <div id="resultado-real"></div>
         </div>
         <!-- Conversor de temperatuara -->
         <div class="col-xs-12 col-sm-6">
-            <h2>Conversor Fahrenheit</h2>
-            <input type="number" >
-            <button type="button" class="btn btn-primary">Valor celsius</button>
+          <h2>Conversor Fahrenheit</h2><br>
+          <input type="number" id="celsus" placeholder="Informe em celsus">
+          <button onclick="fahrenheit()" type="button" class="btn btn-primary">Valor celsius</button>
+          <div id="resultado-celsus"></div>
         </div>
+        <!-- Conversor velocidade -->
+        <div class="col-xs-12 col-sm-6">
+          <h2>Conversor em Metros por Segundos</h2>
+          <input type="number" id="Km" placeholder="Informe os KM">
+          <button onclick="km_ms()" type="button" class="btn btn-primary">Valor em M/S</button> 
+          <div id="resultado-km"></div>
+        </div>
+
+        <!-- Calculadora do valor de baskara -->
+        <div class="col-xs-12 col-sm-6">
+          <h2>Conversor em Baskara</h2>
+          <input type="number" id="A" placeholder="Informe o valor A"><br>
+          <input type="number" id="B" placeholder="Informe o valor B"> <br>
+          <input id="C" type="number" placeholder="Informe o valor C">
+          <button onclick="Baskhara1()" type="button" class="btn btn-primary">Calcular Baskara</button>
+          <div id="resultado-baskx1"></div>
+          <div id="resultado-baskx2"></div>
+        </div>
+      
+        <!-- Calcular a média -->
+        <div class="col-xs-12 col-sm-3">
+          <h2>Calculadora da Média </h2>
+          <input type="number" id="Nota1">
+          <input type="number" id="Nota2">
+          <input type="number" id="Nota3">
+          <button onclick="Media()" type="button" class="btn btn-primary">Calcular a média</button>
+          <div id="resultado-media"></div>
+        </div>
+
+        <!-- Calcular o valor do retangulo -->
+        <div class="col-xs-12 col-sm-4">
+        <h2>Calcular o Valor do Retângulo</h2>
+        <input type="number" id="retangulo1">
+        <input type="number" id="retangulo2">
+        <button onclick="Retangulo()"type="button" class="btn btn-primary">Valor do Retangulo</button>
+        <div id="retangulo-resultado"></div>
+
+        <!-- calcular o Valor triangulo -->
+          <div class="col-xs-12 col-sm-4">
+          <h2>Calcular o Valor do Triângulo</h2>
+          <input type="number" id="triangulo1">
+          <input type="number" id="triangulo2">
+          <button onclick="Triangulo()" type="button" class="btn btn-primary">Valor do Triangulo</button>
+          <div id="resultado-triangulo"></div>
+          </div>
       </div>
     </div>
   </body>
