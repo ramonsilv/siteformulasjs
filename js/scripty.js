@@ -28,14 +28,6 @@ function fahrenheit(){
     let resultFahrenheit = Fahrenheit
     document.getElementById('resultado-celsus').innerHTML = resultFahrenheit + "Fº";
 
-    if (Celsius == 0) {
-					document.getElementById('resultado-celsus').innerHTML = “Temperatura $fíFahrenheit) ínvalida”
-	} else if(isNaN(Celsus)){
-					document . getElementById('resultado-celsus').innerHTML = "Adicione um
-numero"
-	}
-	else{
-		document.getElementById('resultado-celsus').innerHTML = Fahrenheit + "F°;
 
 }
 
