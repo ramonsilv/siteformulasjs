@@ -7,28 +7,39 @@ body{
 }
 #circulo{
     background-color: rgb(49, 49, 105);
+    border-radius: 10%;
+    box-shadow: inset 26px 26px 52px #000069, 
+    inset -26px -26px 52px #28286b ;
 }
 #hipotenusa{
     background-color: rgb(118, 56, 56) ;
+    border-radius: 10%;
 }
 #reais{
     background-color: rgb(118, 56, 56) ;
+    border-radius: 10%;
 }
 #temperatura{
     background-color: rgb(49, 49, 105);
+    border-radius: 10%;
 }
 #baskara{
     background-color: rgb(118, 56, 56) ;
+    border-radius: 10%;
 }
 #velocidade{
     background-color: rgb(49, 49, 105);
+    border-radius: 10%;
 }
 #media{
     background-color: rgb(118, 56, 56) ;
+    border-radius: 10%;
 }
 #retangulo{
     background-color: rgb(49, 49, 105);
+    border-radius: 10%;
 }
 #triangulo{
-    background-color: rgb(118, 56, 56) ;
+    background-color: rgb(118, 56, 56);
+    border-radius: 20%;
 }

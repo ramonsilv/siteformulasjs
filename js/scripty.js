@@ -31,10 +31,15 @@ function fahrenheit(){
 
 }
 
-km_ms = () => { //Função anônima
+km_ms = () => {
     KmHora = document.getElementById('Km').value
     mSegundo = (KmHora / 3.6).toFixed(2)
     document.getElementById('resultado-km').innerHTML = mSegundo + " ms"
+
+    if (KmHora == 0 ) {
+        document.getElementById('resultado-km').innerHTML = "Não é possivel calcular por zero"
+        return
+    }
 }
 
 function Baskhara1() {
